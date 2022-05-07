@@ -1,0 +1,138 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 20px 50px;
+}
+
+.navbar {
+  background-color: #4a4e69;
+  color: #fff;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0.4em;
+  margin-top: 0;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.navbar a span {
+  color: #122b5a;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav ul {
+  display: inline;
+}
+
+.about-me {
+  background-color: whitesmoke;
+}
+
+.about-me .biography {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-me .biography .el {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-me .biography .el p {
+  text-align: center;
+}
+
+.about-me .biography .el p.description {
+  height: 100%;
+}
+
+.about-me .biography .el:not(:last-child) {
+  margin-right: 20px;
+}
+
+.img-wrapper {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.img-wrapper img {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  nav {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .img-wrapper {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 590px) {
+  .about-me {
+    background-color: #e2dfd8;
+  }
+  .about-me .biography {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-me .el {
+    margin: 20px 0 !important;
+  }
+  .img-wrapper {
+    width: 200px;
+    height: 200px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

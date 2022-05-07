@@ -1,0 +1,105 @@
+@import "variables.scss";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: $main-font;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 20px 50px;
+}
+
+.navbar {
+  background-color: $main-color-2;
+  color: #fff;
+  li {
+    display: inline;
+    margin: 0.4em;
+    margin-top: 0;
+  }
+  a {
+    color: #fff;
+    span {
+      color: rgb(18, 43, 90);
+    }
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+nav ul {
+  display: inline;
+}
+
+.about-me {
+  background-color: whitesmoke;
+  .biography {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .el {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      p {
+        text-align: center;
+        &.description {
+          height: 100%;
+        }
+      }
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.img-wrapper {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  nav {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .img-wrapper {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 590px) {
+  .about-me {
+    background-color: rgb(226, 223, 216);
+    .biography {
+      flex-direction: column;
+    }
+    .el {
+      margin: 20px 0 !important;
+    }
+  }
+  .img-wrapper {
+    width: 200px;
+    height: 200px;
+    // margin: auto;
+  }
+}
