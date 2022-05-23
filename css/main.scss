@@ -4,7 +4,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: $main-font;
+  font-family: $main-font-2;
   font-size: 16px;
 }
 
@@ -18,88 +18,267 @@ a {
 
 .navbar {
   background-color: $main-color-2;
-  color: #fff;
+  color: $main-color-6;
+  text-transform: uppercase;
+  font-family: $main-font-1;
+  position: fixed;
+  width: 100%;
   li {
     display: inline;
     margin: 0.4em;
     margin-top: 0;
   }
   a {
-    color: #fff;
-    span {
-      color: rgb(18, 43, 90);
-    }
+    color: $main-color-6;
   }
   .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
+  
 }
+
+.color{
+  background-color: $main-color-1;
+  padding: 30px 30px;
+  p{
+    text-transform: uppercase;
+    font-family: $main-font-1;
+    text-align: center;
+  }
+}
+
+.facts{
+  margin: 60px 0;
+}
+
+
+.text{
+  margin: 15px;
+  padding: 10px;
+}
+
+.space{
+  text-align: center;
+}
+
+.minimalistic{
+  .mainphoto{
+    width: 90%;
+    height: auto;
+    margin:  auto;
+    display: flex;
+  }
+  display: block;
+}
+
+.nature{
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  margin: auto;
+  display:flex;
+  img{
+    width: 100%;
+    align-self: center;
+  }
+}
+
+.naturesection{
+  margin: 60px 0;
+}
+
+.animals{
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  img{
+    width: 100%;
+    align-self: center;
+  }
+  .el {
+    display: flex;
+    flex-direction: column;
+    p {
+      text-align: center;
+      font-family: $main-font-1;
+      text-transform: uppercase;
+      &.description {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.together{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  .el{
+    display: flex;
+    justify-content: center;
+
+  }
+}
+
+.about-world{
+  .el{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.changecolor{
+  transition: color .2s linear;
+}
+
+.changecolor:hover{
+  color:black;
+}
+
 
 nav ul {
   display: inline;
 }
 
-.about-me {
-  background-color: whitesmoke;
+.about-me { 
+  height:20vh;
+  background-color:$main-color-2;
+  font-family: $main-font-1;
   .biography {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     .el {
-      flex: 1;
       display: flex;
+      justify-content: center;
       flex-direction: column;
+      padding: 5px;
+      margin: 0 20px;
       p {
         text-align: center;
         &.description {
           height: 100%;
         }
       }
-      &:not(:last-child) {
-        margin-right: 20px;
-      }
     }
   }
 }
 
 .img-wrapper {
-  width: 200px;
-  height: 200px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   overflow: hidden;
-  margin: 0 auto;
+  margin:  auto;
   img {
     width: 100%;
   }
 }
 
+
+footer {
+  background-color: $main-color-3;
+  text-align: center;
+  font-size: small;
+  padding: 2px;
+  color: $main-color-5;
+  text-transform: uppercase;
+  font-family: $main-font-1;
+
+}
+
+@media (max-width: 978px) {
+  .nature{
+    width: 260px;
+    height: 260px;
+  }
+  .mainphoto{
+    width: auto;
+    height: auto;
+  }
+}
 @media (max-width: 900px) {
   nav {
     display: none;
   }
-}
-@media (max-width: 700px) {
-  .img-wrapper {
+  .about-me{
+    padding: 5px;
+    height: auto; 
+  }
+  .nature{
     width: 150px;
     height: 150px;
   }
+  .animals{
+    width: 250px;
+    height: 250px;
+  }
 }
+
+
+
+@media (max-width: 700px) {
+  .img-wrapper {
+    width: 35px;
+    height: 35px;
+    .about-me{
+        padding: 1px;
+        height: auto;
+    }
+  }
+  .animals{
+    width: 200px;
+    height: 200px;
+  }
+  .color{
+    padding: 5px 5px;
+    p{
+      font-size: 10px;
+    }
+  }
+}
+
+
+
+
 
 @media (max-width: 590px) {
   .about-me {
-    background-color: rgb(226, 223, 216);
-    .biography {
-      flex-direction: column;
-    }
-    .el {
-      margin: 20px 0 !important;
+    height: auto;
+    p{
+      font-size: 10px;
     }
   }
   .img-wrapper {
-    width: 200px;
-    height: 200px;
-    // margin: auto;
+    width: 35px;
+    height: 35px;
+    margin: auto;
+  }
+  .el{
+    align-items: center;
+    .nature{
+      width: 250px;
+      height: 200px;
+      justify-content: center;
+      //flex-direction: column;
+      margin: 20px 0;
+    }
+  }
+  
+  .about-world{
+    .el{
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  .animals{
+    width: 130px;
+    height: 130px;
   }
 }

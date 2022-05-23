@@ -2,7 +2,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 16px;
 }
 
@@ -15,8 +15,12 @@ a {
 }
 
 .navbar {
-  background-color: #4a4e69;
-  color: #fff;
+  background-color: #E9ECEF;
+  color: #6C757D;
+  text-transform: uppercase;
+  font-family: "Inconsolata";
+  position: fixed;
+  width: 100%;
 }
 
 .navbar li {
@@ -26,11 +30,7 @@ a {
 }
 
 .navbar a {
-  color: #fff;
-}
-
-.navbar a span {
-  color: #122b5a;
+  color: #6C757D;
 }
 
 .navbar .container {
@@ -46,12 +46,152 @@ a {
           justify-content: space-between;
 }
 
+.color {
+  background-color: #F8F9FA;
+  padding: 30px 30px;
+}
+
+.color p {
+  text-transform: uppercase;
+  font-family: "Inconsolata";
+  text-align: center;
+}
+
+.facts {
+  margin: 60px 0;
+}
+
+.text {
+  margin: 15px;
+  padding: 10px;
+}
+
+.space {
+  text-align: center;
+}
+
+.minimalistic {
+  display: block;
+}
+
+.minimalistic .mainphoto {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nature {
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nature img {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.naturesection {
+  margin: 60px 0;
+}
+
+.animals {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.animals img {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.animals .el {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.animals .el p {
+  text-align: center;
+  font-family: "Inconsolata";
+  text-transform: uppercase;
+}
+
+.animals .el p.description {
+  height: 100%;
+}
+
+.together {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.together .el {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-world .el {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.changecolor {
+  -webkit-transition: color .2s linear;
+  transition: color .2s linear;
+}
+
+.changecolor:hover {
+  color: black;
+}
+
 nav ul {
   display: inline;
 }
 
 .about-me {
-  background-color: whitesmoke;
+  height: 20vh;
+  background-color: #E9ECEF;
+  font-family: "Inconsolata";
 }
 
 .about-me .biography {
@@ -62,22 +202,24 @@ nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about-me .biography .el {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 5px;
+  margin: 0 20px;
 }
 
 .about-me .biography .el p {
@@ -88,51 +230,115 @@ nav ul {
   height: 100%;
 }
 
-.about-me .biography .el:not(:last-child) {
-  margin-right: 20px;
-}
-
 .img-wrapper {
-  width: 200px;
-  height: 200px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   overflow: hidden;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .img-wrapper img {
   width: 100%;
 }
 
+footer {
+  background-color: #DEE2E6;
+  text-align: center;
+  font-size: small;
+  padding: 2px;
+  color: #ADB5BD;
+  text-transform: uppercase;
+  font-family: "Inconsolata";
+}
+
+@media (max-width: 978px) {
+  .nature {
+    width: 260px;
+    height: 260px;
+  }
+  .mainphoto {
+    width: auto;
+    height: auto;
+  }
+}
+
 @media (max-width: 900px) {
   nav {
     display: none;
+  }
+  .about-me {
+    padding: 5px;
+    height: auto;
+  }
+  .nature {
+    width: 150px;
+    height: 150px;
+  }
+  .animals {
+    width: 250px;
+    height: 250px;
   }
 }
 
 @media (max-width: 700px) {
   .img-wrapper {
-    width: 150px;
-    height: 150px;
+    width: 35px;
+    height: 35px;
+  }
+  .img-wrapper .about-me {
+    padding: 1px;
+    height: auto;
+  }
+  .animals {
+    width: 200px;
+    height: 200px;
+  }
+  .color {
+    padding: 5px 5px;
+  }
+  .color p {
+    font-size: 10px;
   }
 }
 
 @media (max-width: 590px) {
   .about-me {
-    background-color: #e2dfd8;
+    height: auto;
   }
-  .about-me .biography {
+  .about-me p {
+    font-size: 10px;
+  }
+  .img-wrapper {
+    width: 35px;
+    height: 35px;
+    margin: auto;
+  }
+  .el {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .el .nature {
+    width: 250px;
+    height: 200px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px 0;
+  }
+  .about-world .el {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .about-me .el {
-    margin: 20px 0 !important;
-  }
-  .img-wrapper {
-    width: 200px;
-    height: 200px;
+  .animals {
+    width: 130px;
+    height: 130px;
   }
 }
 /*# sourceMappingURL=main.css.map */

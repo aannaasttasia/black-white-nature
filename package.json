@@ -1,0 +1,22 @@
+{
+  "name": "my_biography",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aannaasttasia/learning-git.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aannaasttasia/learning-git/issues"
+  },
+  "homepage": "https://github.com/aannaasttasia/learning-git#readme",
+  "dependencies": {
+    "moment": "^2.29.3"
+  }
+}
