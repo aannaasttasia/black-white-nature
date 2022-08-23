@@ -13,7 +13,7 @@ a {
 }
 
 .container {
-  padding: 20px 50px;
+  padding: 20px 70px;
 }
 
 .navbar {
@@ -21,7 +21,7 @@ a {
   color: $main-color-6;
   text-transform: uppercase;
   font-family: $main-font-1;
-  position: fixed;
+  //position: fixed;
   width: 100%;
   li {
     display: inline;
@@ -49,10 +49,70 @@ a {
   }
 }
 
+.about-animal {
+  height: 30%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  // top: 0%;
+  // left: 0%;
+  right: 10px;
+  background-color: $main-color-2;
+  overflow-x: hidden;
+  transition: 0.2s;
+  font-family: $main-font-1;
+  padding: 0px;
+  display: flex;
+}
+
+.overlay-content {
+  position: relative;
+  text-align: center;
+  color: $main-color-6;
+  text-transform: uppercase;
+  align-self: center;
+  font-size: 15px;
+}
+
+.closebtn{
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 40px;
+  color: $main-color-6;
+  cursor: pointer;
+}
+
+.closebtn:hover{
+  color: black;
+}
+
+.animal{
+  cursor:pointer;
+  transition: color .2s linear;  
+}
+
+.animal:hover{
+  color: black;
+}
+
 .facts{
   margin: 60px 0;
 }
 
+.btn{
+  color: $main-color-6;
+  text-transform: uppercase;
+  font-family: $main-font-1;
+  border: none;
+  background-color: $main-color-1;
+  transition: color .2s linear;
+
+}
+
+.btn:hover{
+  color: black;
+}
 
 .text{
   margin: 15px;
@@ -65,10 +125,12 @@ a {
 
 .minimalistic{
   .mainphoto{
-    width: 90%;
+    width: 70%;
     height: auto;
     margin:  auto;
     display: flex;
+    border-style: groove;
+    padding: 0px 50px;
   }
   display: block;
 }
@@ -96,12 +158,13 @@ a {
   margin: auto;
   display: flex;
   img{
-    width: 100%;
+    width: 90%;
     align-self: center;
   }
   .el {
     display: flex;
     flex-direction: column;
+    color: $main-color-6;
     p {
       text-align: center;
       font-family: $main-font-1;
@@ -147,7 +210,6 @@ nav ul {
 }
 
 .about-me { 
-  height:20vh;
   background-color:$main-color-2;
   font-family: $main-font-1;
   .biography {
@@ -159,7 +221,7 @@ nav ul {
       justify-content: center;
       flex-direction: column;
       padding: 5px;
-      margin: 0 20px;
+      margin: 10px 20px 0px 20px;
       p {
         text-align: center;
         &.description {
@@ -201,6 +263,10 @@ footer {
   .mainphoto{
     width: auto;
     height: auto;
+    
+  }
+  .overlay-content {
+    font-size: 12px;
   }
 }
 @media (max-width: 900px) {
@@ -228,7 +294,7 @@ footer {
     width: 35px;
     height: 35px;
     .about-me{
-        padding: 1px;
+        padding: 0px;
         height: auto;
     }
   }
@@ -245,10 +311,10 @@ footer {
 }
 
 
-
-
-
 @media (max-width: 590px) {
+  .container{
+    padding: 20px 10px;
+  }
   .about-me {
     height: auto;
     p{

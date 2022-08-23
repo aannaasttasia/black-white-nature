@@ -11,7 +11,7 @@ a {
 }
 
 .container {
-  padding: 20px 50px;
+  padding: 20px 70px;
 }
 
 .navbar {
@@ -19,7 +19,6 @@ a {
   color: #6C757D;
   text-transform: uppercase;
   font-family: "Inconsolata";
-  position: fixed;
   width: 100%;
 }
 
@@ -57,8 +56,73 @@ a {
   text-align: center;
 }
 
+.about-animal {
+  height: 30%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  right: 10px;
+  background-color: #E9ECEF;
+  overflow-x: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-family: "Inconsolata";
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.overlay-content {
+  position: relative;
+  text-align: center;
+  color: #6C757D;
+  text-transform: uppercase;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 15px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 40px;
+  color: #6C757D;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.animal {
+  cursor: pointer;
+  -webkit-transition: color .2s linear;
+  transition: color .2s linear;
+}
+
+.animal:hover {
+  color: black;
+}
+
 .facts {
   margin: 60px 0;
+}
+
+.btn {
+  color: #6C757D;
+  text-transform: uppercase;
+  font-family: "Inconsolata";
+  border: none;
+  background-color: #F8F9FA;
+  -webkit-transition: color .2s linear;
+  transition: color .2s linear;
+}
+
+.btn:hover {
+  color: black;
 }
 
 .text {
@@ -75,12 +139,14 @@ a {
 }
 
 .minimalistic .mainphoto {
-  width: 90%;
+  width: 70%;
   height: auto;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-style: groove;
+  padding: 0px 50px;
 }
 
 .nature {
@@ -115,7 +181,7 @@ a {
 }
 
 .animals img {
-  width: 100%;
+  width: 90%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -129,6 +195,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: #6C757D;
 }
 
 .animals .el p {
@@ -189,7 +256,6 @@ nav ul {
 }
 
 .about-me {
-  height: 20vh;
   background-color: #E9ECEF;
   font-family: "Inconsolata";
 }
@@ -219,7 +285,7 @@ nav ul {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 5px;
-  margin: 0 20px;
+  margin: 10px 20px 0px 20px;
 }
 
 .about-me .biography .el p {
@@ -261,6 +327,9 @@ footer {
     width: auto;
     height: auto;
   }
+  .overlay-content {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -287,7 +356,7 @@ footer {
     height: 35px;
   }
   .img-wrapper .about-me {
-    padding: 1px;
+    padding: 0px;
     height: auto;
   }
   .animals {
@@ -303,6 +372,9 @@ footer {
 }
 
 @media (max-width: 590px) {
+  .container {
+    padding: 20px 10px;
+  }
   .about-me {
     height: auto;
   }

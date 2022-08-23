@@ -1,0 +1,32 @@
+{
+  "name": "my_biography",
+  "version": "1.0.0",
+  "description": "first webSite",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aannaasttasia/learning-git.git"
+  },
+  "author": "aannaasttasia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aannaasttasia/learning-git/issues"
+  },
+  "homepage": "https://github.com/aannaasttasia/learning-git#readme",
+  "dependencies": {
+    "moment": "^2.29.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.9",
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "babel-preset-node6": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0"
+  }
+}
